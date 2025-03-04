@@ -41,17 +41,18 @@ a {
     border-radius: 35px;
     transition: 0.3s ease;
     padding: 10px;
+    font-weight: 500;
 }
 .menu-section .menu-content .menu-items:hover {
-    border: 2px solid #21e616;
+    background-color: #0c5808;
 }
 
 .menu-section .menu-content a {
     color: white;
 }
 .header-section, .main-details {
-    background-color: #044700;
-    padding: 10px 0px 60px;
+    background-color: #15b80c;
+    padding: 20px 0px 10px;
 }
 
 .header-section .header-image {
@@ -76,10 +77,6 @@ a {
     font-family: "Miniver";
 }
 
-.hub {
-    color: #21e616;
-}
-
 .main-details .descricao {
     font-size: 1.2em;
     font-weight: 500;
@@ -99,8 +96,6 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -300px;
-    margin-left: 740px;
 }
 
 .main-descricao .botoes {
@@ -117,11 +112,72 @@ a {
     text-decoration: none;
     border-radius: 35px;
     transition: 0.3s ease;
-    background-color: #21e616;
+    background-color: #0c5808;
     padding: 20px 20px;
     width: 140px;
+    border: 2px solid transparent;
 }
 
 .main-descricao a:hover {
-    background-color: #19c400;
+    background-color: #2db319;
+    border-color: #21e616;
+}
+
+/* About Section */
+
+.about-section {
+    padding: 50px 0 100px;
+}
+
+.about-section .about-descricao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.about-section .about-descricao .about-image img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: 0.3 ease;
+    cursor: zoom-in;
+}
+
+.about-section .about-descricao .about-image img:hover {
+    transform: scale(1.05);
+}
+
+.about-section .about-descricao .brands i{
+    font-size: 1.3em;
+    margin-left: 20px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.about-section .about-descricao .brands i:hover {
+    color: #21e616;
+}
+
+.about-section .about-descricao .about-text {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    width: 400px;
+}
+
+.about-title {
+    font-size: 3em;
+}
+
+.about-title::after {
+    content: "";
+    width: 80px;
+    margin: 5px auto 0;
+    height: 5px;
+    display: block;
+    background-color: #21e616;
+    border-radius: 10px;
 }
