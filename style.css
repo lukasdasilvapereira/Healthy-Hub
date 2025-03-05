@@ -51,7 +51,7 @@ a {
     color: white;
 }
 .header-section, .main-details {
-    background-color: #15d80b;
+    background-color: #99CD85;
     padding: 20px 0px 10px;
 }
 
@@ -63,6 +63,7 @@ a {
     margin-bottom: 5px;
     padding: 30px;
     font-family: "Miniver";
+    font-weight: 700;
 }
 
 .main-details .descricao {
@@ -85,6 +86,13 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.main-details .main-descricao .main-image img {
+    width: 500px;
+    height: 600px;
+    padding: 20px 50px;
+    margin-left: 400px;
 }
 
 .main-descricao .botoes {
@@ -117,7 +125,7 @@ a {
     justify-content: center;
     width: 600px;
     margin-top: -530px;
-    margin-left: 130px;
+    margin-left: 150px;
 }
 
 /* About Section */
@@ -145,7 +153,7 @@ a {
 }
 
 .about-section .about-descricao .about-image img:hover {
-    transform: scale(1.05);
+    transform: scale(1.3);
 }
 
 .about-section .about-descricao .brands i{
@@ -177,4 +185,52 @@ a {
     display: block;
     background-color: #21e616;
     border-radius: 10px;
+}
+
+/* zero glu section */
+
+.zeroglu-section {
+    padding: 60px 0px 100px;
+    background-color: #99CD85;
+}
+
+.section-content .zeroglu-title {
+    font-size: 2.5em;
+    text-align: center;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.section-zeroglu .list-zeroglu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.section-zeroglu .list-zeroglu .zeroglu-items{
+    width: calc(40% - 15px);
+    text-align: center;
+    padding: 20px;
+} 
+
+.list-zeroglu .zeroglu-items .zeroglu-images {
+    width: 500px;
+    height: 400px;
+    transition: 0.4s ease;
+    cursor: zoom-in;
+}
+
+.zeroglu-ti {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.zeroglu-descricao {
+    color: white;
+}
+
+.list-zeroglu .zeroglu-items .zeroglu-images:hover {
+    transform: scale(1.3);
 }
