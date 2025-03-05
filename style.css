@@ -21,7 +21,7 @@ a {
 
 .header-section {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     padding: 10px;
 }
@@ -33,14 +33,14 @@ a {
     margin-right: 20px;
     font-size: 1.1em;
     margin: -50px 35px;
-    padding: 10px 30px;
+    padding: 50px 0 120px;
 }
 
 .menu-section .menu-content .menu-items {
     border: 2px solid transparent;
     border-radius: 35px;
     transition: 0.3s ease;
-    padding: 10px;
+    padding: 20px;
     font-weight: 500;
 }
 .menu-section .menu-content .menu-items:hover {
@@ -51,23 +51,11 @@ a {
     color: white;
 }
 .header-section, .main-details {
-    background-color: #15b80c;
+    background-color: #15d80b;
     padding: 20px 0px 10px;
 }
 
-.header-section .header-image {
-    width: 220px;
-    padding: 5px 15px;
-    margin: 10px;
-}
-
 /* main header */
-
-.main-details .main-descricao {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-}
 
 .main-details h2 {
     font-size: 4.5em;
@@ -88,8 +76,9 @@ a {
 .main-details .main-descricao {
     display: flex;
     flex-direction: column;
-    margin-left: 180px;
+    margin-left: 300px;
     margin-top: 40px;
+    padding: 80px 80px;
 }
 
 .main-details .main-descricao .main-image {
@@ -112,7 +101,7 @@ a {
     text-decoration: none;
     border-radius: 35px;
     transition: 0.3s ease;
-    background-color: #0c5808;
+    background-color: #10910a;
     padding: 20px 20px;
     width: 140px;
     border: 2px solid transparent;
@@ -121,6 +110,14 @@ a {
 .main-descricao a:hover {
     background-color: #2db319;
     border-color: #21e616;
+}
+
+.image-main {
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    margin-top: -530px;
+    margin-left: 130px;
 }
 
 /* About Section */
