@@ -524,6 +524,7 @@ a {
         width: 200px;
         height: 70px;
         margin: auto;
+        margin-bottom: 20px;
     }
 
     .main-details .main-descricao h2 {
@@ -535,6 +536,7 @@ a {
         font-size: 1.3em;
         text-align: center;
         margin: auto;
+        margin-bottom: 20px;
     }
 
     .main-details .main-descricao .main-image img{
@@ -543,9 +545,45 @@ a {
     }
 
    @media screen and (max-width: 900px) {
-    body {
-        background-color: red;
+
+    .header-section {
+        justify-content: flex-start; /* Move o header para a esquerda */
+    }
+
+    .menu-section .menu-content  {
+       display: flex;
+       flex-direction: column;
+       align-items: flex-start; /* Garante que fique à esquerda */
+       text-align: left; /* Para alinhar o texto também */
+       margin: 0; /* Remove margens desnecessárias */
+       padding-left: 20px; 
+       position: absolute;
+    }
+
+    .menu-section .menu-content .menu-items a {
+        color: black;
+    }
+
+    .menu-open {
+        display: flex;
+        position: absolute;
+        right: 20px; /* Mantém o ícone na direita */
+    }
+
+    .menu-open i {
+        font-size: 1.2em;
+
+    }
+
+    .menu-fechar {
+        display: flex;
+        position: absolute;
+        min-height: 100%;
+        background-color: white;
+        padding: 100px 100px;
+        border: 2px solid red;
+        top: 0;
+    }
+       
     }
    }
-    
-    }
