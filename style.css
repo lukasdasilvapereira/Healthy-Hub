@@ -19,6 +19,21 @@ a {
 
 /* header section */
 
+.menu-open {
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2em;
+    display: none;
+}
+
+.menu-fechar {
+    font-size: 1.2em;
+    display: none;
+    cursor: pointer;
+}
+
 .header-section {
     display: flex;
     justify-content: flex-end;
@@ -350,7 +365,7 @@ a {
 }
 
 .section-form .contact-form textarea {
-    width: 200px;
+    width: 400px;
     height: 80px;
     padding: 10px;
     border-radius: 5px;
@@ -376,3 +391,55 @@ a {
     border-color: #21e616;
 }
 
+/* Footer */
+
+.footer-section {
+    background-color: rgba(0, 0, 0, 0.829);
+    padding: 30px 0 70px;
+}
+
+.footer-brands {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+    font-size: 1.3em;
+    cursor: pointer;
+    color: white;
+    transition: 0.4s ease;
+    margin-bottom: 25px;
+}
+
+.footer-brands i:hover {
+    color: #21e616;
+}
+
+.footer-pr {
+    display: flex; /* Alinha os elementos na mesma linha */
+    align-items: center; /* Alinha verticalmente */
+    gap: 5px; /* Espaço entre os itens */
+    justify-content: center;
+}
+.policy-link, .dividendo {
+    font-size: 1.2em;
+    color: white;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+.leg:hover {
+    color: #2db319;
+}
+
+.terms:hover {
+    color: #2db319;
+}
+
+.footer-section .footer-image .image-footer {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 400px;
+    margin-bottom: 15px;
+}
