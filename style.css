@@ -78,8 +78,8 @@ a {
     display: flex;
     flex-direction: column;
     margin-left: 300px;
-    margin-top: 40px;
-    padding: 60px 80px;
+    margin-top: -60px;
+    padding: 150px 80px;
 }
 
 .main-details .main-descricao .main-image {
@@ -89,8 +89,7 @@ a {
 }
 
 .main-details .main-descricao .main-image img {
-    width: 500px;
-    height: 600px;
+    width: 600px;
     padding: 20px 50px;
     margin-left: 400px;
     border-top-left-radius: 60px;
@@ -195,7 +194,7 @@ a {
     font-size: 2.5em;
     text-align: center;
     color: white;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
 }
 
 .section-zeroglu .list-zeroglu {
@@ -309,3 +308,71 @@ a {
 .zerolact-list .zerolact-items .zerolact-images:hover {
     transform: scale(1.3);
 }
+
+/* Section form */
+
+.contact-section{
+    padding: 60px 0px 100px;
+    background-color: #faf4f5;
+}
+
+.section-form h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.section-form h2::after {
+    content: "";
+    width: 80px;
+    margin: auto;
+    height: 5px;
+    display: block;
+    background-color: #21e616;
+    border-radius: 10px;
+}
+
+.section-form .contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    margin: auto;
+}
+
+.section-form .contact-form input[type="text"], input[type="email"]{
+    width: 400px;
+    height: 80px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    margin: auto;
+}
+
+.section-form .contact-form textarea {
+    width: 200px;
+    height: 80px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    margin: auto;
+    resize: vertical;
+}
+
+.section-form .contact-form input[type= "submit"] {
+    width: 200px;
+    height: 70px;
+    background-color: #21e616;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s ease;
+    margin: auto;
+}
+
+.section-form .contact-form input[type= "submit"]:hover {
+    background-color: #2db319;
+    border-color: #21e616;
+}
+
