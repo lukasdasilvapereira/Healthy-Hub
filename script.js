@@ -6,11 +6,20 @@ const items = document.querySelectorAll(".menu-items");
 function abrir() {
     menuClose.style.display = "block";
     menuSection.style.display = "block";
-    items.style.display = "flex"
+    menuSection.style.opacity = "1"
+    menuSection.style.visibility = "visible"
+    document.body.classList.toggle("show-mobile-menu")
+
+    menuOpen.style.display = "none";
+
 }
 
 function fechar() {
     menuClose.style.display = "none";
     menuSection.style.display = "none";
-    items.style.display = "none"
+    menuSection.style.opacity = "0"
+    menuSection.style.visibility = "hidden"
+    document.body.classList.remove("show-mobile-menu");
+
+    menuOpen.style.display = "flex";
 }

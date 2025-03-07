@@ -11,7 +11,6 @@
 <body>
     <header class="header-section">
         <nav class="menu-section">
-            <div class="menu-overlay"></div>
             <div class="menu-open" onclick="abrir()">
                 <i class="fa-solid fa-bars"></i>
             </div>
@@ -20,16 +19,17 @@
                 <i class="fa-solid fa-xmark" onclick="fechar()"></i>
             </div>
             <ul class="menu-content">
-                <li class="menu-items"><a href="#">Sobre nós</a></li>
-                <li class="menu-items"><a href="#">Zero glúten</a></li>
-                <li class="menu-items"><a href="#">Zero açúcar</a></li>
-                <li class="menu-items"><a href="#">Zero lactose </a></li>
-                <li class="menu-items"><a href="#">Contato</a></li>
+                <li class="menu-items"><a href="#about">Sobre nós</a></li>
+                <li class="menu-items"><a href="#zeroglu">Zero glúten</a></li>
+                <li class="menu-items"><a href="#zeroacu">Zero açúcar</a></li>
+                <li class="menu-items"><a href="#zerolact">Zero lactose </a></li>
+                <li class="menu-items"><a href="#contact">Contato</a></li>
             </ul>
         </nav>
     </header>
 
     <section class="main-details">
+        <div class="menu-overlay"></div>
         <div class="main-descricao">
                 <h2 class="title">
                 Healthy <br> <span class="hub">Hub</span>
@@ -48,7 +48,7 @@
         </div>
     </section>
 
-    <section class="about-section">
+    <section class="about-section" id="about">
         <div class="about-descricao">
             <h2 class="about-title">Sobre nós</h2>
             <div class="about-content"></div>
@@ -66,7 +66,7 @@
         </div>
     </section>
 
-    <section class="zeroglu-section">
+    <section class="zeroglu-section" id="zeroglu">
         <div class="section-content">
             <h2 class="zeroglu-title">1- Alimentos Zero Glúten</h2>
             <div class="section-zeroglu">
@@ -99,7 +99,7 @@
         </div>
     </section>
 
-    <section class="zeroacu-section">
+    <section class="zeroacu-section" id="zeroacu">
         <div class="zeroacu-details">
             <h2 class="zeroacu-title">2- Alimentos Zero Açúcar</h2>
             <ul class="zeroacu-list">
@@ -130,7 +130,7 @@
         </div>
     </section>
 
-    <section class="zerolact-section">
+    <section class="zerolact-section" id="zerolact">
         <div class="zerolact-details">
             <h2 class="zerolact-title">3- Alimentos Zero Lactose</h2>
             <ul class="zerolact-list">
@@ -169,7 +169,7 @@
         </div>
     </section>
 
-    <section class="contact-section">
+    <section class="contact-section" id="contact">
         <form action="#" class="section-form">
             <h2 class="contact-title">Contato</h2>
             <div class="contact-form">

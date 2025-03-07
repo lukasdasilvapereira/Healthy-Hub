@@ -17,6 +17,10 @@ a {
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* header section */
 
 .menu-open {
@@ -575,7 +579,13 @@ input[type="email"] {
 
         .menu-section .menu-content .menu-items a {
             color: black;
-            padding: 10px;
+            padding: 20px;
+            font-size: 1.2em;
+        }
+
+        .menu-content {
+            opacity: 0;
+            visibility: hidden;
         }
 
         .menu-section .menu-content .menu-items a:hover {
@@ -613,24 +623,59 @@ input[type="email"] {
             top: 40px;
         }
 
-        .menu-section.active .menu-overlay {
-            display: block;
+        body.show-mobile-menu .header-section .menu-content {
+            left: 0;
         }
-        
-        .menu-overlay {
+
+        body.show-mobile-menu header::before {
+            content: "";
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
-            height: 100vh;
-            background: rgba(0, 0, 0, 0.5);
-            /* Fundo escuro transparente */
-            backdrop-filter: blur(2px);
-            /* Efeito de desfoque */
-            z-index: 5;
-            /* Garante que fique acima do conteúdo */
-            display: none;
-            /* Inicia oculto */
+            height: 100%;
+            backdrop-filter: blur(5px);
+            background-color: rgba(0, 0, 0, 0.2);
+            transition: 0.4s ease;
+        }
+
+
+    }
+
+    @media screen and (max-width: 728px) {
+        .about-descricao .about-text {
+            font-size: 1em;
+        }
+
+        .about-descricao h2 {
+            font-size: 2em;
+        }
+
+
+        .zeroacu-section .zeroacu-list .zeroacu-items img {
+            width: 100%;
+            height: auto;
+        }
+
+        .zeroacu-section h2 {
+            font-size: 1.5em;
+        }
+
+        .section-zeroglu .list-zeroglu .zeroglu-items img {
+            width: 100%;
+            height: auto;
+        }
+
+        .zeroglu-section h2 {
+            font-size: 1.5em;
+        }
+
+        .zerolact-section .zerolact-list .zerolact-items img {
+            width: 100%;
+            height: auto;
+        }
+        .zerolact-section h2 {
+            font-size: 1.5em;
         }
     }
 }
