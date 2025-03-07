@@ -689,24 +689,59 @@ input[type="email"] {
         }
     }
 
-    @media screen and (max-width: 393px) and (max-height: 852px) {
-        .main-descricao h2 {
+    @media screen and (max-width: 391px) and (max-height: 852px) {
+        .main-details .main-descricao h2 {
             font-size: 2.5em;
         }
 
-        .main-descricao p {
-            font-size: 0.8em;
+        .main-details .main-descricao a {
+            min-width: 130px;
         }
+
+       .main-descricao .descricao{
+           max-width: 220px;
+            font-size: 0.7em;
+        }
+
+        .about-section .about-descricao .about-image img{
+            max-width: 310px;
+             border-radius: 50%;
+         }
+
+        .section-form .contact-form input[type="text"],
+        input[type="email"], textarea {
+           max-width: 300px;
+        }
+        .about-section .about-descricao p {
+            max-width: 300px;
+         }
     }
 
     @media screen and (max-width: 430px) and (max-height: 932px) {
-        .main-descricao h2 {
+        .main-details .main-descricao h2 {
             font-size: 2.5em;
         }
 
-        .main-details .main-descricao p {
-            font-size: 0.8em;
-        }
+        .main-descricao .descricao{
+            max-width: 310px;
+             font-size: 1em;
+
+
+        .about-section .about-descricao .about-image img{
+            max-width: 310px;
+             font-size: 1em;
+             border-radius: 0%;
+         }
+
+         .about-section .about-descricao p {
+            max-width: 300px;
+         }
+
+         .section-form .contact-form input[type="text"],
+         input[type="email"] {
+            max-width: 200px;
+         }
     }
-    }
+}
+}
     
