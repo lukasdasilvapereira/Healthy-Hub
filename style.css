@@ -678,4 +678,14 @@ input[type="email"] {
             font-size: 1.5em;
         }
     }
+
+    @media screen and (max-width: 640px) {
+        .main-descricao h2 {
+            font-size: 3em;
+        }
+
+        .main-descricao p {
+            font-size: 1em;
+        }
+    }
 }
