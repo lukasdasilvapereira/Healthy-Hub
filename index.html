@@ -11,12 +11,13 @@
 <body>
     <header class="header-section">
         <nav class="menu-section">
-            <div class="menu-open">
+            <div class="menu-overlay"></div>
+            <div class="menu-open" onclick="abrir()">
                 <i class="fa-solid fa-bars"></i>
             </div>
 
             <div class="menu-fechar">
-                <i class="fa-solid fa-xmark"></i>
+                <i class="fa-solid fa-xmark" onclick="fechar()"></i>
             </div>
             <ul class="menu-content">
                 <li class="menu-items"><a href="#">Sobre nós</a></li>
@@ -199,5 +200,7 @@
         </div>
     </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

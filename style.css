@@ -41,7 +41,7 @@ a {
     padding: 10px;
 }
 
-.menu-section .menu-content{
+.menu-section .menu-content {
     display: flex;
     align-items: center;
     gap: 40px;
@@ -58,6 +58,7 @@ a {
     padding: 20px;
     font-weight: 500;
 }
+
 .menu-section .menu-content .menu-items:hover {
     background-color: #0c5808;
 }
@@ -65,7 +66,9 @@ a {
 .menu-section .menu-content a {
     color: white;
 }
-.header-section, .main-details {
+
+.header-section,
+.main-details {
     background-color: #99CD85;
     padding: 20px 0px 10px;
 }
@@ -167,7 +170,7 @@ a {
     transition: 0.4 ease;
 }
 
-.about-section .about-descricao .brands i{
+.about-section .about-descricao .brands i {
     font-size: 1.3em;
     margin-left: 20px;
     transition: 0.3s ease;
@@ -220,11 +223,11 @@ a {
     flex-direction: row;
 }
 
-.section-zeroglu .list-zeroglu .zeroglu-items{
+.section-zeroglu .list-zeroglu .zeroglu-items {
     width: calc(40% - 15px);
     text-align: center;
     padding: 20px;
-} 
+}
 
 .list-zeroglu .zeroglu-items .zeroglu-images {
     width: 500px;
@@ -326,7 +329,7 @@ a {
 
 /* Section form */
 
-.contact-section{
+.contact-section {
     padding: 60px 0px 100px;
     background-color: #faf4f5;
 }
@@ -355,7 +358,8 @@ a {
     margin: auto;
 }
 
-.section-form .contact-form input[type="text"], input[type="email"]{
+.section-form .contact-form input[type="text"],
+input[type="email"] {
     width: 400px;
     height: 80px;
     padding: 10px;
@@ -374,7 +378,7 @@ a {
     resize: vertical;
 }
 
-.section-form .contact-form input[type= "submit"] {
+.section-form .contact-form input[type="submit"] {
     width: 200px;
     height: 70px;
     background-color: #21e616;
@@ -386,7 +390,7 @@ a {
     margin: auto;
 }
 
-.section-form .contact-form input[type= "submit"]:hover {
+.section-form .contact-form input[type="submit"]:hover {
     background-color: #2db319;
     border-color: #21e616;
 }
@@ -416,12 +420,17 @@ a {
 }
 
 .footer-pr {
-    display: flex; /* Alinha os elementos na mesma linha */
-    align-items: center; /* Alinha verticalmente */
-    gap: 5px; /* Espaço entre os itens */
+    display: flex;
+    /* Alinha os elementos na mesma linha */
+    align-items: center;
+    /* Alinha verticalmente */
+    gap: 5px;
+    /* Espaço entre os itens */
     justify-content: center;
 }
-.policy-link, .dividendo {
+
+.policy-link,
+.dividendo {
     font-size: 1.2em;
     color: white;
     transition: 0.4s ease;
@@ -457,7 +466,7 @@ a {
         padding: 20px;
         color: white;
     }
-    
+
 }
 
 @media screen and (max-width: 1310px) {
@@ -466,7 +475,7 @@ a {
     }
 
     .main-details .main-descricao .main-image img {
-      width: 450px;
+        width: 450px;
     }
 
     .main-details .main-descricao {
@@ -514,7 +523,7 @@ a {
         padding: 20px;
     }
 
-    .main-details .main-descricao{
+    .main-details .main-descricao {
         max-width: 450px;
         margin: auto;
         margin-top: -180px;
@@ -539,51 +548,89 @@ a {
         margin-bottom: 20px;
     }
 
-    .main-details .main-descricao .main-image img{
+    .main-details .main-descricao .main-image img {
         width: 500px;
         margin: auto;
     }
 
-   @media screen and (max-width: 900px) {
+    @media screen and (max-width: 900px) {
 
-    .header-section {
-        justify-content: flex-start; /* Move o header para a esquerda */
-    }
+        .header-section {
+            justify-content: flex-start;
+            /* Move o header para a esquerda */
+        }
 
-    .menu-section .menu-content  {
-       display: flex;
-       flex-direction: column;
-       align-items: flex-start; /* Garante que fique à esquerda */
-       text-align: left; /* Para alinhar o texto também */
-       margin: 0; /* Remove margens desnecessárias */
-       padding-left: 20px; 
-       position: absolute;
-    }
+        .menu-section .menu-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            /* Garante que fique à esquerda */
+            text-align: left;
+            /* Para alinhar o texto também */
+            margin: 0;
+            /* Remove margens desnecessárias */
+            padding-left: 20px;
+            position: fixed;
+        }
 
-    .menu-section .menu-content .menu-items a {
-        color: black;
-    }
+        .menu-section .menu-content .menu-items a {
+            color: black;
+            padding: 10px;
+        }
 
-    .menu-open {
-        display: flex;
-        position: absolute;
-        right: 20px; /* Mantém o ícone na direita */
-    }
+        .menu-section .menu-content .menu-items a:hover {
+            color: white;
+        }
 
-    .menu-open i {
-        font-size: 1.2em;
+        .menu-open {
+            display: flex;
+            position: absolute;
+            right: 20px;
+            /* Mantém o ícone na direita */
+        }
 
-    }
+        .menu-open i {
+            font-size: 1.2em;
 
-    .menu-fechar {
-        display: flex;
-        position: absolute;
-        min-height: 100%;
-        background-color: white;
-        padding: 100px 100px;
-        border: 2px solid red;
-        top: 0;
+        }
+
+        .menu-fechar {
+            display: flex;
+            position: fixed;
+            min-height: 100%;
+            background-color: white;
+            padding: 100px 140px;
+            top: 0;
+        }
+
+        .menu-fechar {
+            display: none;
+        }
+
+        .menu-fechar i {
+            position: absolute;
+            right: 30px;
+            top: 40px;
+        }
+
+        .menu-section.active .menu-overlay {
+            display: block;
+        }
+        
+        .menu-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.5);
+            /* Fundo escuro transparente */
+            backdrop-filter: blur(2px);
+            /* Efeito de desfoque */
+            z-index: 5;
+            /* Garante que fique acima do conteúdo */
+            display: none;
+            /* Inicia oculto */
+        }
     }
-       
-    }
-   }
+}
